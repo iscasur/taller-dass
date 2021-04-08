@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+.input-forms {
+  @apply mt-1 block w-full bg-gray-100 border-transparent focus:border-gray-300 focus:bg-white focus:ring-0;
+}
+
+.btn {
+  @apply bg-green-400 text-white font-medium border border-transparent rounded-md;
+}
+
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply mb-4;
+  }
+}
