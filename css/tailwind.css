@@ -14,34 +14,6 @@
   @apply relative flex text-2xl md:text-6xl bg-gray-900 text-white h-16 md:h-32 w-16 md:w-32 text-center justify-center items-center;
 }
 
-#counter div::before {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  background: rgba(253, 230, 138, 1);
-  color: #111827;
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#counter .day::before {
-  content: 'D';
-}
-#counter .hour::before {
-  content: 'H';
-}
-#counter .minute::before {
-  content: 'M';
-}
-#counter .second::before {
-  content: 'S';
-}
-
 @tailwind utilities;
 
 @layer base {
