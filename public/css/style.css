@@ -815,6 +815,15 @@ p {
   width: 4rem;
 }
 
+@media (min-width: 768px) {
+  .calendar {
+    height: 8rem;
+    font-size: 3.75rem;
+    line-height: 1;
+    width: 8rem;
+  }
+}
+
 #counter div::before {
   position: absolute;
   bottom: -30px;
