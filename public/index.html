@@ -42,12 +42,16 @@
         src="https://www.facebook.com/tr?id=755789895139040&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
+    <script
+      src="https://kit.fontawesome.com/8a62390b99.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="sticky top-0 z-10">
-      <section class="relative bg-white">
+      <section class="relative bg-white shadow">
         <div
-          class="md:container md:mx-auto flex justify-between items-center py-2"
+          class="md:container md:mx-auto flex justify-between items-center p-6 py-3"
         >
           <div>
             <a href="#">
@@ -60,7 +64,11 @@
             </a>
           </div>
           <div>
-            <a href="#" class="btn px-4 py-2">¡Me apunto!</a>
+            <a
+              href="#register"
+              class="btn px-6 py-3 uppercase font-thin tracking-wider"
+              >¡Me apunto! 🚀</a
+            >
           </div>
         </div>
       </section>
@@ -73,106 +81,126 @@
         "
       >
         <div
-          class="flex bg-black bg-opacity-80 h-full items-center text-center"
+          class="flex bg-black bg-opacity-80 h-full items-center text-center p-6"
         >
           <div class="md:w-2/3 md:mx-auto text-white">
-            <div class="">
-              <span
-                ><p class="uppercase font-semibold">
+            <div>
+              <span>
+                <p class="uppercase font-thin md:font-semibold tracking-wider">
                   ¡Llegó el momento de declarar!
-                </p></span
+                </p>
+              </span>
+              <h1
+                class="text-4xl tracking-wider md:text-7xl uppercase leading-tight mb-8 font-bold"
               >
-              <h1 class="text-4xl md:text-7xl uppercase leading-tight mb-8">
                 Aprende a calcular el ISR anual de sueldos y salarios
               </h1>
-              <h2 class="uppercase">
-                Y descubre cómo puedes aumentar tu saldo a favor
+              <h2 class="uppercase font-thin tracking-wider">
+                Descubre cómo aumentar <br />tu saldo a favor
               </h2>
+            </div>
+            <div class="absolute animate-bounce bottom-20 right-0 left-0">
+              <i class="fas fa-chevron-down"></i>
             </div>
           </div>
         </div>
       </section>
       <section class="text-center">
         <div
-          class="md:w-2/3 md:mx-auto p-16 pb-8 text-2xl md:text-3xl font-light md:font-extralight leading-loose"
+          class="md:w-2/3 md:mx-auto p-16 text-2xl md:text-3xl font-thin leading-normal md:leading-loose"
         >
-          Estamos en el mes en el que debemos presentar la declaración de
+          Estamos en el mes 📅 en el que debemos presentar la declaración de
           Impuesto Sobre la Renta y sacar cuentas si le debemos a la autoridad o
-          si <strong>tendremos saldo a favor</strong>.
+          si <strong>tendremos saldo a favor</strong> 🤑.
         </div>
       </section>
-      <section class="md:w-2/3 md:mx-auto grid grid-cols-2 gap-16 py-8">
-        <div class="leading-8 text-lg">
-          <p><strong>Precio:</strong> $ 499.00 (IVA inc)</p>
-          <p>
-            <strong>Dirigido a:</strong> Personas físicas con Ingresos por
-            Sueldos y Salarios.
-          </p>
-          <p><strong>Qué incluye:</strong></p>
-          <ul class="list-none md:list-disc md:list-inside">
-            <li>Acceso al taller vía Zoom (~1:30 hr);</li>
-            <li>Casos prácticos;</li>
-            <li>
-              Material de apoyo (archivo para calcular tu ISR y tener siempre
-              presente tus deducciones personales);
-            </li>
-            <li>Sesión de preguntas y respuestas;</li>
-            <li>
-              Suscripción a nuestro boletín exclusivo para nuestros asistentes
-              del taller.
-            </li>
-          </ul>
-          <p>
-            <strong>Fecha:</strong> 15 de Abril a las 10:00 am (Centro de
-            México).
-          </p>
-        </div>
-        <div>
-          <div class="shadow border rounded-md p-8">
-            <form name="taller" method="POST" data-netlify="true">
-              <p>
-                <label for="name">Nombre:</label>
-                <input
-                  class="input-forms"
-                  type="text"
-                  placeholder="Nombre completo"
-                  name="name"
-                />
-              </p>
-              <p>
-                <label for="email">Email:</label>
-                <input
-                  class="input-forms"
-                  type="email"
-                  name="email"
-                  placeholder="Correo electrónico"
-                  required
-                />
-              </p>
-              <p>
-                <label for="phone">Teléfono:</label>
-                <input
-                  class="input-forms"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="(55)4475-3602"
-                  required
-                />
-              </p>
-              <div data-netlify-recaptcha="true"></div>
-              <p>
-                <button class="btn w-full py-4" type="submit">
-                  ¡Me apunto!
-                </button>
-              </p>
-            </form>
+      <section id="register">
+        <h3
+          class="text-3xl pt-16 text-center uppercase font-thin tracking-widest"
+        >
+          Registro
+        </h3>
+        <hr class="border-gray-600 my-8 w-32 mx-auto" />
+        <div
+          class="md:w-2/3 md:mx-auto flex flex-col-reverse md:grid md:grid-cols-2 gap-16 py-8 px-8"
+        >
+          <div class="leading-8 text-lg font-thin">
+            <ul>
+              <li><strong>Precio:</strong> $ 499.00 (IVA inc)</li>
+              <li>
+                <strong>Dirigido a:</strong> Personas físicas con Ingresos por
+                Sueldos y Salarios.
+              </li>
+              <li>
+                <strong>Fecha:</strong> 15 de Abril / 11:00 AM (Centro de
+                México).
+              </li>
+              <li>
+                <strong>Qué incluye:</strong>
+                <ul class="list-disc list-inside">
+                  <li>Acceso al taller vía Zoom (1:30~2:00 hr);</li>
+                  <li>Casos prácticos;</li>
+                  <li>
+                    Material de apoyo (archivo para calcular tu ISR y tener
+                    siempre presente tus deducciones personales);
+                  </li>
+                  <li>Sesión de preguntas y respuestas;</li>
+                  <li>
+                    Suscripción a nuestro boletín exclusivo para nuestros
+                    asistentes del taller.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="shadow border rounded-md p-8">
+              <form name="taller" method="POST" data-netlify="true">
+                <p>
+                  <label for="name">Nombre:</label>
+                  <input
+                    class="input-forms"
+                    type="text"
+                    placeholder="Nombre completo"
+                    name="name"
+                  />
+                </p>
+                <p>
+                  <label for="email">Email:</label>
+                  <input
+                    class="input-forms"
+                    type="email"
+                    name="email"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                </p>
+                <p>
+                  <label for="phone">Teléfono:</label>
+                  <input
+                    class="input-forms"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="(55)4475-3602"
+                    required
+                  />
+                </p>
+                <div data-netlify-recaptcha="true"></div>
+                <p>
+                  <button
+                    class="btn w-full py-4 uppercase tracking-wide font-light"
+                    type="submit"
+                  >
+                    ¡Reservar mi lugar!
+                  </button>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="text-center">
         <div
-          class="md:w-2/3 md:mx-auto pb-16 text-2xl md:text-3xl font-light md:font-extralight leading-loose"
+          class="text-center md:w-2/3 md:mx-auto p-16 text-2xl md:text-3xl font-thin leading-normal md:leading-loose"
         >
           Con esta inversión podrás aprovechar al máximo los beneficios fiscales
           contemplados en la ley para pagar la menor cantidad de impuestos, e
@@ -182,14 +210,18 @@
           >.
         </div>
       </section>
-      <section id="extra" class="bg-green-100 p-16 md:p-32">
+      <section id="extra" class="bg-green-100 py-12 px-12 md:p-32">
         <div class="md:w-2/3 md:mx-auto">
-          <p class="text-center uppercase mb-2 font-normal">¿Sabías que…?</p>
-          <h1 class="text-center text-4xl uppercase font-black">
+          <p class="text-center uppercase mb-2 font-normal text-gray-600">
+            ¿Sabías que…?
+          </p>
+          <h1
+            class="text-center text-2xl md:text-4xl uppercase font-black leading-relaxed"
+          >
             puedes recuperar el saldo a favor de hasta 5 años atrás
           </h1>
           <hr class="border-green-900 my-8 w-32 mx-auto" />
-          <div class="leading-relaxed text-xl font-light">
+          <div class="leading-relaxed text-justify text-xl font-light">
             <p>
               Lo que significa que si en tus declaraciones pasadas (2016 y
               posteriores) tienes un saldo a favor
@@ -200,7 +232,9 @@
               recuperarlo ya que en saldos a favor de declaraciones
               extemporáneas deberás presentar la devolución de forma manual.
             </p>
-            <p>¡Así que no lo pienses mas!</p>
+            <p class="text-center">
+              <strong>¡Así que no lo pienses mas!</strong> ⏳
+            </p>
             <p>
               Con esta pequeña inversión tendrás las herramientas necesarias
               para gozar de los beneficios y cumpir con tus obligaciones
@@ -209,9 +243,76 @@
           </div>
         </div>
       </section>
+      <section id="faq" class="py-12 px-12 md:p-32">
+        <h3 class="text-3xl text-center uppercase font-thin tracking-widest">
+          FAQ
+        </h3>
+        <hr class="border-gray-600 my-8 w-32 mx-auto" />
+        <ul class="font-thin text-lg">
+          <li>
+            <p class="font-bold">¿Podré verlo en diferido?</p>
+            <p>
+              Si. La sesión quedará grabada para que puedas consultarla en todo
+              momento.
+            </p>
+          </li>
+          <li>
+            <p class="font-bold">
+              Tengo más de un régimen u otro distinto al de sueldos y salarios,
+              ¿Puedo participar?
+            </p>
+            <p>
+              Si. Aunque en esta ocasión nos vamos a centrar en el régimen de
+              sueldos y salarios, las recomendaciones que hagamos pueden aplicar
+              a otros regímenes.
+            </p>
+          </li>
+          <li>
+            <p class="font-bold">
+              Tomé el taller, pero me gustaría que la revisaran la declaración
+              antes de enviarla.
+            </p>
+            <p>
+              Si. Nos envías el borrador de tu declaración y lo comentamos de
+              forma personal (1 sola ocasión).
+            </p>
+          </li>
+          <li>
+            <p class="font-bold">
+              ¿Pueden presentar la declaración por mi cuenta?
+            </p>
+            <p>Si. Aunque ese servicio tiene un costo adicional.</p>
+          </li>
+          <li>
+            <p class="font-bold">
+              No tuve saldo a favor, pero tengo interes en participar, ¿Me
+              sirvirá este taller?
+            </p>
+            <p>
+              Si. De hecho la finalidad de este taller es orientarte para las
+              declaraciones de ahora en adelante, por lo que si ahora no tienes
+              saldo a favor podrás prepararte para la declaración del siguiente
+              año.
+            </p>
+          </li>
+          <li>
+            <p></p>
+          </li>
+        </ul>
+      </section>
+      <div
+        class="fixed z-10 bottom-4 right-4 bg-green-400 rounded-full h-14 w-14 text-center"
+      >
+        <a
+          class="text-white text-5xl flex justify-center h-full items-center"
+          href="http://wa.me/+525544753602/?text=Hola%20antes%20de%20inscribirme%20al%20taller%20me%20gustaría…"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
     </main>
     <footer class="bg-gray-800 text-white">
-      <div class="md:container md:mx-auto p-12 text-center">
+      <div class="md:container md:mx-auto p-6 md:p-12 text-center">
         Todoconta – Información contable © 2020
       </div>
     </footer>
