@@ -1,9 +1,9 @@
-let countDate = new Date('Apr 15, 2021 11:00:00').getTime();
+let countDate = new Date('Apr 29, 2021 11:00:00').getTime();
+let now = new Date().getTime();
+let gap = countDate - now;
+let text = 'Lo sentimos 🙁, este taller pasó… Nos vemos pronto';
 
 function workshopStarts() {
-  let now = new Date().getTime();
-  let gap = countDate - now;
-
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
@@ -20,6 +20,10 @@ function workshopStarts() {
   document.getElementById('second').innerText = s;
 }
 
-setInterval(function () {
-  workshopStarts();
-}, 1000);
+if (gap > 0) {
+  setInterval(function () {
+    workshopStarts();
+  }, 1000);
+} else {
+  // document.getElementById('mensaje').innerText = text;
+}
