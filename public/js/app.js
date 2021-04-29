@@ -1,4 +1,4 @@
-let countDate = new Date('Apr 29, 2021 11:00:00').getTime();
+let countDate = new Date('May 01, 2021 11:00:00').getTime();
 
 function workshopStarts() {
   let now = new Date().getTime();

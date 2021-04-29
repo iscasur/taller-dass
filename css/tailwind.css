@@ -18,6 +18,6 @@
 
 @layer base {
   p {
-    @apply mb-4 font-thin;
+    @apply mb-4;
   }
 }
